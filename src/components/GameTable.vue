@@ -72,7 +72,9 @@ export default {
               this.game.over = true;
             } else {
               if (this.game.row === this.game.table.length - 1) {
-                window.alert("You lose!");
+                window.alert(
+                  "You lose! The word was " + this.game.wordOfTheDay
+                );
                 this.game.over = true;
               } else {
                 this.game.row++;
